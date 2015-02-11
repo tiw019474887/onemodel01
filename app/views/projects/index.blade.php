@@ -3,7 +3,7 @@
 @section('content')
 
 <div ng-app="ProjectApp" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-controller="ProjectController"  >
-	<h2>RESEARCH PROJECT</h2>
+	<h2>ADD MODEL</h2>
 <form class="form-horizontal" ng-submit="submitForm()">
     <div class="col-lg-6">
         <div class="form-group">

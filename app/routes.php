@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('a', function()
+Route::get('show', function()
 {
-	return View::make('a/');
+	return View::make('show/');
 });
-Route::controller('a/project','ProjectController');
-Route::controller('a/faculty','FacultyController');
+Route::controller('show/project','ProjectController');
+Route::controller('show/faculty','FacultyController');
 

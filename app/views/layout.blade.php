@@ -73,7 +73,7 @@
                             <span class="caret"></span>
                         </a>
                             <ul class="dropdown-menu" role="menu">
-                                  <li><a href="/a/research-project"> เพิ่มโครงการ</a></li>
+                                  <li><a href="project"> เพิ่มโครงการ</a></li>
                                   <li><a href="#">แก้ไขข้อมูลส่วนตัว</a></li>
                                   <li><a href="#">ออกจากระบบ</a></li>
                             </ul>
