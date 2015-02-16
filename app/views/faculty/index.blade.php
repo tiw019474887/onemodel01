@@ -37,7 +37,7 @@ var app = angular.module('FacultyApp',[]);
                    console.log("submitForm Start...");
                    console.log($scope.faculty);
                    $http({
-                       url : "/a/faculty/add",
+                       url : "/show/faculty/add",
                        data : $.param($scope.faculty),
                        headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
                        method : 'post'
@@ -45,6 +45,7 @@ var app = angular.module('FacultyApp',[]);
                        console.log(response);
                    });
                }
+               
            });
 
 
