@@ -78,7 +78,7 @@
             console.log("submitForm Start...");
             console.log($scope.project);
             $http({
-                url : "/a/project/add",
+                url : "/show/project/add",
                 data : $.param($scope.project),
                 headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
                 method : 'post'
