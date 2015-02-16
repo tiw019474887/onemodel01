@@ -11,9 +11,15 @@
 |
 */
 
-Route::get('show', function()
+Blade::setContentTags('<%', '%>'); 		// for variables and all things Blade
+Blade::setEscapedContentTags('<%%', '%%>'); 	// for escaped data
+
+
+Route::get('/', function()
 {
-	return View::make('show/');
+    return Redirect::to('show/project');
+
+
 });
 Route::controller('show/project','ProjectController');
 Route::controller('show/faculty','FacultyController');

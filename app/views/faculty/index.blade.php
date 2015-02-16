@@ -45,7 +45,7 @@ var app = angular.module('FacultyApp',[]);
                        console.log(response);
                    });
                }
-               
+
            });
 
 
