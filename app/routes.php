@@ -17,4 +17,7 @@ Route::get('show', function()
 });
 Route::controller('show/project','ProjectController');
 Route::controller('show/faculty','FacultyController');
+Route::controller('show/faculty/view','FacultyViewController');
+Route::controller('show/project/view','ProjectViewController');
+
 
