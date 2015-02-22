@@ -19,14 +19,5 @@ class FacultyController extends BaseController {
     public function getAll(){
         return Faculty::all();
     }
-
-    public function getView($id){
-        $id = (int) $id;
-        $faculty = Faculty::with([])->find($id);
-        if ($faculty){
-            return $this->ok($faculty);
-        }else {
-            return $this->error(null,"Faculty id:$id is invalid");
-        }
-    }
+    
 }
