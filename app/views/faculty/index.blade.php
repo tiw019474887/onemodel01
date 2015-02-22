@@ -17,6 +17,22 @@
             <button type="submit" class="btn btn-default">Submit</button>
         </div>
 </form>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Faculty_Th</th>
+			<th>Faculty_En</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="faculty in faculties">
+			<td>{{faculty.faculty_th}}</td>
+			<td>{{faculty.faculty_en}}</td>
+
+		</tr>
+	</tbody>
+</table>
 </div>
 </div>
 
@@ -45,8 +61,15 @@ var app = angular.module('FacultyApp',[]);
                        console.log(response);
                    });
                }
+                $http({
+                           url : "/show/faculty/all",
+                           method:'get'
 
-           });
+                       }).success(function(response){
+                           $scope.faculties = response;
+                       });
+
+           })
 
 
 </script>

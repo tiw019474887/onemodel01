@@ -43,5 +43,16 @@ class Project extends NeoEloquent {
         return $this->belongsTo('Faculty','HAS');
     }
 
+    public function saveFacultyRelation(Faculty $faculty){
+        $this->faculty()->associate($faculty)->save();
+    }
+
+    public function removeFacultyRelation(){
+        $faculty = $this->faculty()->get();
+        $faculty->projects()->detach($this->id);
+
+        //$this->faculty()->dissociate();
+    }
+
 
 }

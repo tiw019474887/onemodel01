@@ -16,6 +16,10 @@ class FacultyController extends BaseController {
         return $faculty;
     }
 
+    public function getAll(){
+        return Faculty::all();
+    }
+
     public function getView($id){
         $id = (int) $id;
         $faculty = Faculty::with([])->find($id);
