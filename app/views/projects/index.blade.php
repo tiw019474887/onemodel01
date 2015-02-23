@@ -1,25 +1,16 @@
 @extends('layout')
 
 @section('content')
-<script type="text/ng-template" id="customTemplate.html">
-  <a>
-      <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{faculty.faculty_th}}" width="16">
-      <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
-  </a>
-</script>
+
 
 
 <div ng-app="ProjectApp" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-controller="ProjectController"  >
 	<h2>เพิ่มโมเดล</h2>
 <form class="form-horizontal" ng-submit="submitForm()">
     <div class="col-lg-6">
+        <div class="form-group">
+        </div>
 
-               <div class='form-group' ng-controller="TypeaheadCtrl">
-
-                   <h4>Static arrays</h4>
-                   <pre>Model: {{selected | json}}</pre>
-                   <input type="text" ng-model="ProjectApp" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control">
-               </div>
 
 
         <div class="form-group">

@@ -129,7 +129,12 @@
         <script src="/bootstrap/js/freelancer.js"></script>
         <script src="/thirdparty/angularjs/angular.min.js"></script>
         <script src="/thirdparty/angular-loading-spinner/angular-loading-spinner.js"></script>
-
+        <script type="text/ng-template" id="customTemplate.html">
+          <a>
+              <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{faculty.faculty_th}}" width="16">
+              <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+          </a>
+        </script>
         @yield('js')
 
 
