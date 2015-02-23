@@ -15,4 +15,7 @@ class ProjectController extends BaseController {
 
         return $project;
     }
+    public function getAll(){
+        return Faculty::all();
+    }
 }

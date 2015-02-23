@@ -57,9 +57,9 @@
                  </div>
                <form class="navbar-form navbar-left" role="search">
                    <div class="form-group">
-                     <input type="text" class="form-control" placeholder="Search">
+                     <input type="text" class="form-control" placeholder=".....">
                    </div>
-                   <button type="submit" class="btn btn-default">Submit</button>
+                   <button type="submit" class="btn btn-default">ค้นหา</button>
                </form>
 
              <div id="navbar" class="collapse navbar-collapse">
@@ -90,13 +90,13 @@
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
                 <li>
-                   <a>MANU<span class="sr-only">(current)</span></a>
+                   <a>เมนู<span class="sr-only">(current)</span></a>
                 </li>
                 <li>
-                   <a href="project">PROJECT</a>
+                   <a href="project">เพิ่มโมเดล</a>
                 </li>
                 <li>
-                   <a href="faculty">FACULTY</a>
+                   <a href="faculty">เพิ่มคณะ</a>
                 </li>
                 <li>
                    <a href="#"></a>

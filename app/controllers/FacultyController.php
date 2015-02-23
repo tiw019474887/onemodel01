@@ -19,5 +19,5 @@ class FacultyController extends BaseController {
     public function getAll(){
         return Faculty::all();
     }
-    
+
 }
