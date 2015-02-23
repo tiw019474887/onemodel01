@@ -7,7 +7,7 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"barryvdh/laravel-ide-helper": "1.x",
-		"vinelab/neoeloquent": "~1.0"
+		"vinelab/neoeloquent": "~1.1"
 	},
 	"autoload": {
 		"classmap": [
