@@ -6,9 +6,14 @@
 
 <div ng-app="ProjectApp" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-controller="ProjectController"  >
 	<h2>เพิ่มโมเดล</h2>
+
 <form class="form-horizontal" ng-submit="submitForm()">
     <div class="col-lg-6">
         <div class="form-group">
+
+                    <label for="NameTh">ชื่อคณะ(TH)</label>
+                    <input class="form-control" rows="3"type="text" ng-model="project.name_th" placeholder="ชื่อคณะ(TH)" required="">
+
         </div>
 
 
@@ -70,7 +75,7 @@
     var app = angular.module('ProjectApp',[]);
     app.controller('ProjectController',function($scope,$http) {
         console.log("ProjectController Start...");
-
+        $scope.projects=[];
         $scope.project = {};
 
         $scope.submitForm = function(){
@@ -86,10 +91,10 @@
             });
         }
         $http({
-                        url : "/show/projects/all",
+                        url : "/show/project/all",
                         method:'get'
                         }).success(function(response){
-                        $scope.faculties = response;
+                        $scope.projects = response;
                         });
     });
 

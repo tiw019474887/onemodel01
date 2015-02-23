@@ -73,7 +73,7 @@
                             <span class="caret"></span>
                         </a>
                             <ul class="dropdown-menu" role="menu">
-                                  <li><a href="model"> ผู้ใช้ทั่วไป</a></li>
+                                  <li><a href="projectview">ผู้ดูแลระบบ</a></li>
                                   <li><a href="#">แก้ไขข้อมูลส่วนตัว</a></li>
                                   <li><a href="#">ออกจากระบบ</a></li>
                             </ul>
@@ -85,26 +85,6 @@
 
              </div>
         </nav>
-		<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-                <li>
-                   <a>เมนู<span class="sr-only">(current)</span></a>
-                </li>
-                <li>
-                   <a href="projectview">โมเดล</a>
-                </li>
-                <li>
-                   <a href="facultyview">คณะ</a>
-                </li>
-                <li>
-                   <a href="#"></a>
-                </li>
-
-            </ul>
-        </div>
-    </div>
 
         <div class="container">
 
