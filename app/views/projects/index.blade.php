@@ -56,10 +56,6 @@
             <label for="F">แสดงความขอบคุณ</label>
             <textarea class="form-control" rows="3"type="text" class="form-control" ng-model="project.acknowledgement" id="acknowledgement" placeholder="แสดงความขอบคุณ"></textarea>
         </div>
-        <div class="form-group">
-            <label for="G">รูปภาพ</label>
-            <input type="file" id="G">
-        </div>
             <button type="submit" class="btn btn-default">Submit</button>
         </div>
 </form>
