@@ -27,7 +27,7 @@
             else {
                 sessionKey = $(xml).text();
 				document.getElementById("a").innerHTML=sessionKey;
-				//location.href = 
+				//location.href =
                 LoadProfile();
                 ret = true;
             }

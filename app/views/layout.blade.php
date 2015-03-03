@@ -53,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                       <a class="navbar-brand" href="#">OneModel</a>
+                       <a class="navbar-brand" href="model">OneModel</a>
                  </div>
                <form class="navbar-form navbar-left" role="search">
                    <div class="form-group">
@@ -75,7 +75,7 @@
                             <ul class="dropdown-menu" role="menu">
                                   <li><a href="model"> ผู้ใช้ทั่วไป</a></li>
                                   <li><a href="#">แก้ไขข้อมูลส่วนตัว</a></li>
-                                  <li><a href="#">ออกจากระบบ</a></li>
+                                  <li><a href="model">ออกจากระบบ</a></li>
                             </ul>
                      </li>
                   </ul>
@@ -85,14 +85,14 @@
 
              </div>
         </nav>
-		<div class="container-fluid">
+ <!-- <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
+            <ul class="nav nav-pills nav-stacked" >
                 <li>
                    <a>เมนู<span class="sr-only">(current)</span></a>
                 </li>
-                <li>
+                <li class="active">
                    <a href="projectview">โมเดล</a>
                 </li>
                 <li>
@@ -104,7 +104,7 @@
 
             </ul>
         </div>
-    </div>
+    </div> -->
 
         <div class="container">
 

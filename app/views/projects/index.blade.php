@@ -1,6 +1,26 @@
 @extends('layout')
 
 @section('content')
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-pills nav-stacked" >
+                <li>
+                   <a>เมนู<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="active">
+                   <a href="projectview">โมเดล</a>
+                </li>
+                <li>
+                   <a href="facultyview">คณะ</a>
+                </li>
+                <li>
+                   <a href="#"></a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
 
 
 
@@ -8,11 +28,12 @@
 	<h2>เพิ่มโมเดล</h2>
 
 <form class="form-horizontal" ng-submit="submitForm()">
+
     <div class="col-lg-6">
         <div class="form-group">
 
-                    <label for="NameTh">ชื่อคณะ(TH)</label>
-                    <input class="form-control" rows="3"type="text" ng-model="project.name_th" placeholder="ชื่อคณะ(TH)" required="">
+                    <label for="NameTh">ชื่อโมเดล</label>
+                    <input class="form-control" rows="3"type="text" ng-model="project.name_th" placeholder="ชื่อโมเดล" required="">
 
         </div>
 

@@ -53,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                       <a class="navbar-brand" href="#">OneModel</a>
+                       <a class="navbar-brand" href="model">OneModel</a>
                  </div>
                <form class="navbar-form navbar-left" role="search">
                    <div class="form-group">
