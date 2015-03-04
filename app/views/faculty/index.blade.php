@@ -62,6 +62,7 @@ var app = angular.module('FacultyApp',[]);
                        method : 'post'
                    }).success(function(response){
                        console.log(response);
+                       window.location="/show/facultyview";
                    });
                }
 

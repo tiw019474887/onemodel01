@@ -105,6 +105,7 @@
                 method : 'post'
             }).success(function(response){
                 console.log(response);
+                window.location="/show/projectview";
             });
         }
         $http({
