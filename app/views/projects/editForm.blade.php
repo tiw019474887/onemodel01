@@ -9,10 +9,10 @@
                     <center><h4>เมนู</h4></center>
                 </li>
                 <li class="active">
-                   <a href="/project/view">โมเดล</a>
+                    <a href="/project/view">โมเดล</a>
                 </li>
                 <li>
-                   <a href="/faculty/view">คณะ</a>
+                    <a href="/faculty/view">คณะ</a>
                 </li>
                 <li>
                    <a href="#"></a>
@@ -105,7 +105,7 @@
                 method : 'post'
             }).success(function(response){
                 console.log(response);
-                window.location="/project/view";
+                window.location="/show/projectview";
             });
         }
         $http({
@@ -113,7 +113,30 @@
             method:'get'
             }).success(function(response){
             $scope.faculties = response;
+
+            $http({
+                url : "/project/id/<?php echo $projectsId; ?>",
+                method:'get'
+            }).success(function(response){
+                $scope.project = response;
+
+                var index
+                $scope.faculties.forEach(function(el,idx){
+                    console.log(el.id == $scope.project.faculty.id);
+                    if (el.id == $scope.project.faculty.id){
+                        index = idx;
+                    }
+                })
+
+                console.log(index);
+
+                $scope.project.faculty = $scope.faculties[index];
+
             });
+
+        });
+
+
     });
 
 

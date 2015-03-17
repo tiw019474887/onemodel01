@@ -19,5 +19,13 @@ class FacultyController extends BaseController {
     public function getAll(){
         return Faculty::all();
     }
+    public function getById($id){
+        return Project::with(['faculty'])->find($id);
+
+    }
+
+    public  function getEditForm($id){
+        return View::make("faculty.editForm")->with("facultyId",$id);
+    }
 
 }

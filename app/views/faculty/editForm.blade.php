@@ -11,7 +11,7 @@
                 <li>
                     <a href="/project/view">โมเดล</a>
                 </li>
-                <li  class="active">
+                <li>
                     <a href="/faculty/view">คณะ</a>
                 </li>
                 <li>
@@ -56,7 +56,7 @@ var app = angular.module('FacultyApp',[]);
                    console.log("submitForm Start...");
                    console.log($scope.faculty);
                    $http({
-                       url : "/show/faculty/add",
+                       url : "/faculty/add",
                        data : $.param($scope.faculty),
                        headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
                        method : 'post'
@@ -65,8 +65,14 @@ var app = angular.module('FacultyApp',[]);
                        window.location="/show/facultyview";
                    });
                }
+        $http({
+            url : "/faculty/id/<?php echo $facultyId; ?>",
+            method:'get'
+        }).success(function(response) {
+            $scope.faculty = response;
 
-           })
+        });
+    });
 
 
 </script>

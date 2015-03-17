@@ -6,9 +6,7 @@ class ModelController extends BaseController {
 
         return View::make('models.index');
     }
-    public function getAll(){
-        return Faculty::all();
-    }
+
 
 
 }

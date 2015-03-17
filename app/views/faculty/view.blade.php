@@ -6,13 +6,13 @@
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-pills nav-stacked" >
                 <li>
-                   <a>เมนู<span class="sr-only">(current)</span></a>
+                    <center><h4>เมนู</h4></center>
                 </li>
-                <li>
-                   <a href="projectview">โมเดล</a>
+                <li >
+                    <a href="/project/view">โมเดล</a>
                 </li>
-                <li class="active">
-                   <a href="facultyview">คณะ</a>
+                <li  class="active">
+                    <a href="/faculty/view">คณะ</a>
                 </li>
                 <li>
                    <a href="#"></a>
@@ -41,8 +41,8 @@
 			<td>{{faculty.faculty_th}}</td>
 			<td>{{faculty.faculty_en}}</td>
 			<td>
-			 <a class="btn btn-primary" ui-sref="edit({ id : faculty.id})">แก้ไข</a>
-             <button class="btn btn-danger" ng-click="open('lg',faculty)">ลบ</button>
+                <a class="btn btn-primary" href="/faculty/edit/{{faculty.id}}">แก้ไข</a>
+                <button class="btn btn-danger" ng-click="delete(faculty)">ลบ</button>
             </td>
 
 		</tr>
@@ -66,12 +66,29 @@ var app = angular.module('ViewFacultyApp',[]);
 
 
                 $http({
-                           url : "/show/facultyview/all",
+                           url : "/faculty/view/all",
                            method:'get'
 
                        }).success(function(response){
                            $scope.faculties = response;
                        });
+
+        $scope.delete = function (faculty) {
+
+            deleteStr = "Do you want to delete this user [" + faculty.faculty_th + "]?";
+            if(confirm(deleteStr)){
+                $http({
+                    url : "/faculty/view/delete",
+                    data : faculty,
+                    method : 'post'
+
+                }).success(function(response){
+                    console.log(response);
+                    window.location="/faculty/view";
+                });
+            }
+
+        }
 
            });
 

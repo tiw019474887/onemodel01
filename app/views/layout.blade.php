@@ -73,7 +73,7 @@
                             <span class="caret"></span>
                         </a>
                             <ul class="dropdown-menu" role="menu">
-                                  <li><a href="model"> ผู้ใช้ทั่วไป</a></li>
+                                  <li><a href="/model/view"> ผู้ใช้ทั่วไป</a></li>
                                   <li><a href="#">แก้ไขข้อมูลส่วนตัว</a></li>
                                   <li><a href="model">ออกจากระบบ</a></li>
                             </ul>
@@ -88,10 +88,11 @@
  <!-- <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
+		<a>เมนู</a>
             <ul class="nav nav-pills nav-stacked" >
-                <li>
-                   <a>เมนู<span class="sr-only">(current)</span></a>
-                </li>
+                
+                   <a>เมนู</a>
+                
                 <li class="active">
                    <a href="projectview">โมเดล</a>
                 </li>
@@ -113,31 +114,30 @@
         </div><!-- /.container -->
 
 
-        <!-- jQuery -->
-        <script src="/bootstrap/js/jquery.js"></script>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="/bootstrap/js/jquery.js"></script>
 
-
-        <!-- Plugin JavaScript -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script src="/bootstrap/js/classie.js"></script>
-        <script src="/bootstrap/js/cbpAnimatedHeader.js"></script>
-
-        <!-- Custom Theme JavaScript -->
-        <script src="/bootstrap/js/freelancer.js"></script>
-        <script src="/thirdparty/angularjs/angular.min.js"></script>
-        <script src="/thirdparty/angular-loading-spinner/angular-loading-spinner.js"></script>
-        <script type="text/ng-template" id="customTemplate.html">
-          <a>
-              <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{faculty.faculty_th}}" width="16">
-              <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
-          </a>
-        </script>
-        @yield('js')
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
 
 
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/bootstrap/js/classie.js"></script>
+    <script src="/bootstrap/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/bootstrap/js/freelancer.js"></script>
+    <script src="/thirdparty/angularjs/angular.min.js"></script>
+    <script src="/thirdparty/angular-loading-spinner/angular-loading-spinner.js"></script>
+    <script type="text/ng-template" id="customTemplate.html">
+        <a>
+            <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{faculty.faculty_th}}" width="16">
+            <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+        </a>
+    </script>
+    @yield('js')
        </div>
 
     </body>
