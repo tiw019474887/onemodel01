@@ -15,7 +15,7 @@
                     <a href="/faculty/view">คณะ</a>
                 </li>
                 <li>
-                   <a href="#"></a>
+                    <a href="/user/view">ผู้ใช้งาน</a>
                 </li>
 
             </ul>
@@ -56,13 +56,13 @@ var app = angular.module('FacultyApp',[]);
                    console.log("submitForm Start...");
                    console.log($scope.faculty);
                    $http({
-                       url : "/show/faculty/add",
+                       url : "/faculty/add",
                        data : $.param($scope.faculty),
                        headers: { 'Content-Type' : 'application/x-www-form-urlencoded' },
                        method : 'post'
                    }).success(function(response){
                        console.log(response);
-                       window.location="/show/facultyview";
+                       window.location="/faculty/view";
                    });
                }
 

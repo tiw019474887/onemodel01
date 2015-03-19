@@ -21,7 +21,7 @@ Route::get('/', function()
 
 
 });
-Route::get('Model/view','ModelController@getIndex');
+Route::get('model/view','ModelController@getIndex');
 
 Route::get('faculty','FacultyController@getIndex');
 Route::get('faculty/all','FacultyController@getAll');
@@ -41,11 +41,21 @@ Route::get('project/id/{id}','ProjectController@getById');
 Route::get('project/edit/{id}','ProjectController@getEditForm');
 Route::post('project/view/delete','ViewProjectController@postDelete');
 
+Route::get('user','UserController@getIndex');
+Route::get('user/view','UserController@getIndexs');
+Route::get('user/view/all','UserController@getAll');
+Route::post('user/add','UserController@postAdd');
+Route::get('user/id/{id}','UserController@getById');
+Route::get('user/edit/{id}','UserController@getEditForm');
+Route::post('user/view/delete','UserController@postDelete');
+
+
+
 
 
 //ระบบอัตโนมัติให้เอาออก เปลี่ยนเป็นระบบ manual
-Route::controller('show/model','ModelController');
+//Route::controller('show/model','ModelController');
 //Route::controller('show/project','ProjectController');
-Route::controller('show/faculty','FacultyController');
-Route::controller('show/facultyview','ViewFacultyController');
+//Route::controller('show/faculty','FacultyController');
+//Route::controller('show/facultyview','ViewFacultyController');
 //Route::controller('show/projectview','ViewProjectController');

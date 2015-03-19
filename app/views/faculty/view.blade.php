@@ -15,7 +15,7 @@
                     <a href="/faculty/view">คณะ</a>
                 </li>
                 <li>
-                   <a href="#"></a>
+                    <a href="/user/view">ผู้ใช้งาน</a>
                 </li>
 
             </ul>
@@ -25,7 +25,7 @@
 
 <div ng-app="ViewFacultyApp" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-controller="ViewFacultyController"  >
 	<h2>คณะ</h2>
-		<a class="btn btn-default" href="faculty" >เพิ่มคณะ</a>
+		<a class="btn btn-default" href="/faculty" >เพิ่มคณะ</a>
 <form class="form-horizontal">
 <table class="table table-striped">
 	<thead>

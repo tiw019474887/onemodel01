@@ -8,10 +8,17 @@ class FacultyController extends BaseController {
     }
 
     public function  postAdd(){
+        if (Input::has('id')) {
+            $faculty = Faculty::find(Input::get('id'));
+            $faculty->fill(Input::all());
+            $faculty->save();
+        }
+        else {
+            $input_faculty = Faculty::updateOrCreate(Input::except([]));
+            $faculty = Faculty::find($input_faculty['id']);
 
-        $faculty = Faculty::updateOrCreate(Input::except([]));
-
-        $faculty->save();
+            $faculty->save();
+        }
 
         return $faculty;
     }
@@ -20,7 +27,7 @@ class FacultyController extends BaseController {
         return Faculty::all();
     }
     public function getById($id){
-        return Project::with(['faculty'])->find($id);
+        return Faculty::find($id);
 
     }
 

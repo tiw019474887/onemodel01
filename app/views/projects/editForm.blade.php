@@ -15,7 +15,7 @@
                     <a href="/faculty/view">คณะ</a>
                 </li>
                 <li>
-                   <a href="#"></a>
+                    <a href="/user/view">ผู้ใช้งาน</a>
                 </li>
 
             </ul>
@@ -55,7 +55,7 @@
         </div>
         <div class="form-group">
             <label for="objectives">วัตถุประสงค์</label>
-            <textarea class="form-control" rows="3"type="text" ng-model="project.objecttives" class="form-control" id="objectives" placeholder="วัตถุประสงค์"></textarea>
+            <textarea class="form-control" rows="3"type="text" ng-model="project.objectives" class="form-control" id="objectives" placeholder="วัตถุประสงค์"></textarea>
         </div>
         <div class="form-group">
             <label for="B">วิธีดำเนินงาน</label>
@@ -105,7 +105,7 @@
                 method : 'post'
             }).success(function(response){
                 console.log(response);
-                window.location="/show/projectview";
+                window.location="/project/view";
             });
         }
         $http({
@@ -115,7 +115,7 @@
             $scope.faculties = response;
 
             $http({
-                url : "/project/id/<?php echo $projectsId; ?>",
+                url : "/project/id/<?php echo $projectId; ?>",
                 method:'get'
             }).success(function(response){
                 $scope.project = response;

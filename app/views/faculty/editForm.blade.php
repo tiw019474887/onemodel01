@@ -15,7 +15,7 @@
                     <a href="/faculty/view">คณะ</a>
                 </li>
                 <li>
-                   <a href="#"></a>
+                    <a href="/user/view">ผู้ใช้งาน</a>
                 </li>
 
             </ul>
@@ -62,7 +62,7 @@ var app = angular.module('FacultyApp',[]);
                        method : 'post'
                    }).success(function(response){
                        console.log(response);
-                       window.location="/show/facultyview";
+                       window.location="/faculty/view";
                    });
                }
         $http({
