@@ -15,7 +15,7 @@
                     <a href="/faculty/view">คณะ</a>
                 </li>
                 <li>
-                   <a href="#"></a>
+                    <a href="/user/view">ผู้ใช้งาน</a>
                 </li>
 
             </ul>
@@ -30,6 +30,7 @@
 	<thead>
 		<tr>
 			<th>ชื่อโมเดล</th>
+            <th>ชื่อคณะ</th>
 
 
 
@@ -37,7 +38,8 @@
 	</thead>
 	<tbody>
 		<tr ng-repeat="project in projects">
-			<td>{{project.name_th}} - {{project.faculty.faculty_th}}</td>
+			<td>{{project.name_th}} </td>
+            <td>{{project.faculty.faculty_th}}</td>
 
 			<td>
 			 <a class="btn btn-primary" href="/project/edit/{{project.id}}">แก้ไข</a>

@@ -53,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                       <a class="navbar-brand" href="model">OneModel</a>
+                       <a class="navbar-brand" href="/model/view">OneModel</a>
                  </div>
                <form class="navbar-form navbar-left" role="search">
                    <div class="form-group">
@@ -74,6 +74,7 @@
                         </a>
                             <ul class="dropdown-menu" role="menu">
                                   <li><a href="/project/view">ผู้ดูแลระบบ</a></li>
+                                  <li><a href="/user">สมัครสมาชิก</a></li>
                                   <li><a href="#">แก้ไขข้อมูลส่วนตัว</a></li>
                                   <li><a href="#">ออกจากระบบ</a></li>
                             </ul>
